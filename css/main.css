@@ -275,6 +275,14 @@ li::before {
 
 /* Services */
 
+.services, .socios {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Socios */
+
+
 /* Footer */
 .footer {
   padding: 16px;
@@ -296,13 +304,6 @@ li::before {
   padding-right: 6px;
 }
 
-.mobile-show {
-  display: block;
-}
-.pc-show {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   main {
     padding-inline: 8px;
@@ -317,12 +318,6 @@ li::before {
 }
 
 @media only screen and (min-width: 1024px) {
-  .pc-show {
-    display: block;
-  }
-  .mobile-show {
-    display: none;
-  }
   main {
     max-width: none;
     padding: 0 0 16px 0;
