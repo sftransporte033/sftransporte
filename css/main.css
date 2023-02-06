@@ -278,6 +278,7 @@ li::before {
 .services, .socios {
   display: flex;
   flex-direction: column-reverse;
+  gap: 24px;
 }
 
 /* Socios */
