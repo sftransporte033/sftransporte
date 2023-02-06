@@ -235,12 +235,6 @@ li::before {
   transition: width .4s ease-in;
 }
 
-.images-logos img:hover {
-  width: 250px;
-  height: 250px;
-}
-
-
 /* Formulario */
 .main-form {
   display: grid;
@@ -302,6 +296,13 @@ li::before {
   padding-right: 6px;
 }
 
+.mobile-show {
+  display: block;
+}
+.pc-show {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   main {
     padding-inline: 8px;
@@ -316,6 +317,12 @@ li::before {
 }
 
 @media only screen and (min-width: 1024px) {
+  .pc-show {
+    display: block;
+  }
+  .mobile-show {
+    display: none;
+  }
   main {
     max-width: none;
     padding: 0 0 16px 0;
